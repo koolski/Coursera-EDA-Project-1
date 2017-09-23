@@ -1,4 +1,5 @@
 #Getting data
+library(dplyr)
 setwd("~/Documents/R/Coursera/EDA/Project 1")
 df <- read.table('household_power_consumption.txt', header = T, sep = ';')
 df$Date <- as.Date(df$Date, format = '%d/%m/%Y')
